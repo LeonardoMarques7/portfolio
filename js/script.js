@@ -1,13 +1,13 @@
 const nav = `
 <ul class="nav-ul">
     <li class="nav-item">
-        <a href="portifolio/" class="nav-link active">Home</a>
+        <a href="portfolio/" class="nav-link active">Home</a>
     </li>
     <li class="nav-item">
-        <a href="portifolio/sobre.html" class="nav-link">Sobre</a>
+        <a href="portfolio/sobre.html" class="nav-link">Sobre</a>
     </li>
     <li class="nav-item">
-        <a href="portifolio/projetos.html" class="nav-link">Projetos</a>
+        <a href="portfolio/projetos.html" class="nav-link">Projetos</a>
     </li>
     <li class="nav-item">
         <a href="#" class="nav-link">Contato</a>
