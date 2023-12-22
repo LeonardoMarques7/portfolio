@@ -268,4 +268,8 @@ a {
     .user-content-sobre {
         margin: 0;
     }
+
+    .user-content {
+        padding: 0px;
+    }
 }
