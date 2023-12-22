@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Adicione as folhas de estilo do Slick Carousel -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+    </head>
+    <style>
+        .carroseul {
+            max-width: 300px;
+        }
+    </style>
+    <body>
+        <div class="card">
+            <div class="carroseul">
+                <div>
+                    <img
+                        src="https://via.placeholder.com/300x200.png?text=Server+Placeholder1"
+                        alt=""
+                        class="img-card"
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://via.placeholder.com/300x200.png?text=Server+Placeholder1"
+                        alt=""
+                        class="img-card"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".carroseul").slick({
+                    dots: true, // Adiciona pontos de navegação
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 1, // Define quantos slides mostrar de cada vez
+                    slidesToScroll: 1, // Define quantos slides avançar/retroceder
+                });
+            });
+        </script>
+    </body>
+</html>

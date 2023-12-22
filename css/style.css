@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    max-width: 1100px;
+    margin: 20px auto;
+    border: 1px solid #1b61c9;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #1b61c960;
+}
+
+.main-content,
+.nav {
+    max-height: 500px;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-content {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    padding: 80px;
+    height: 100%;
+    /* border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px; */
+    align-items: center;
+    background-color: #1b61c9;
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav-item {
+    font-size: 1rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.active {
+    color: #1f3c79;
+}
+
+.link-rede {
+    color: #fff;
+}
+
+.icons-rede:hover .link-rede {
+    color: #1b61c9;
+}
+
+.nav-link:hover {
+    color: #1f3c79;
+}
+
+.user-content {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.redes-container {
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-rede {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #1b61c9;
+    background-color: #1b61c9;
+    transition: 0.5s;
+}
+
+.icons-rede:hover {
+    color: #1b61c9;
+    border-color: #1b61c9;
+    background-color: #fff;
+}
+
+a {
+    padding: 0px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.image-content {
+    max-width: 150px;
+    border-radius: 50%;
+    animation: slideDown 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.title-content {
+    animation: slideDown 0.8s ease-in-out;
+}
+
+.text-contet {
+    animation: slideDown 1s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .page-content {
+        margin-bottom: 30px;
+    }
+
+    .nav-link:hover {
+        color: #1f3c79;
+    }
+
+    body {
+        max-width: 1100px;
+        margin: 0px;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0px;
+    }
+
+    .main-content,
+    .nav {
+        max-height: auto;
+    }
+}
+
+/* Sobre */
+
+.user-content-sobre {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.redes-container-sobre {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.title-sobre {
+    text-transform: uppercase;
+}
+
+.sobre-content {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.sobre-content p {
+    text-align: justify;
+}
+
+/* Cards */
+
+.cards-container {
+    width: 300px;
+    margin-top: 1rem;
+    cursor: grab;
+}
+
+.cards-container:active {
+    cursor: grabbing;
+}
+
+/* .card {
+    border: 1px solid #ccc;
+    flex: 1;
+    color: #4e4e4e;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+} */
+
+.img-card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* .title-card {
+    margin: 4px;
+}  */
+
+.slick-dots li button {
+    color: #1b61c9 !important;
+}
+
+.slick-prev:before,
+.slick-prev,
+.slick-prev::after,
+.slick-prev:before,
+.slick-next:before,
+.slick-dots,
+.slick-next {
+    display: none !important;
+}
+
+/* Sobre */
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+@media (max-height: 100vh) {
+    .nav {
+        border-bottom-right-radius: 10px;
+    }
+}
