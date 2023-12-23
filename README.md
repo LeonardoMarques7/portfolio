@@ -1,8 +1,8 @@
 # Portfólio - Leonardo Marques
 
 <strong style="color: #39f;">
-    Home
-    Sobre
-    Projetos
-    Contato
+    Home <br>
+    Sobre <br>
+    Projetos <br>
+    Contato <br>
 </strong>

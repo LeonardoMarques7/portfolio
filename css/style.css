@@ -208,6 +208,25 @@ a {
     text-align: start;
 }
 
+.input-box {
+    display: flex;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.label-term {
+    font-size: 0.8rem;
+}
+
+.label-term input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.term-privace {
+    cursor: pointer;
+    color: #1a58b4;
+}
+
 /* Sobre */
 
 .mt-2 {
