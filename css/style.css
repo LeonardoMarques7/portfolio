@@ -87,6 +87,14 @@ html {
     padding-left: 250px;
 }
 
+.projeto-contet {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 40px 8vw;
+    margin-left: 250px;
+}
+
 .page-content {
     text-align: center;
 }
@@ -200,53 +208,6 @@ a {
     text-align: start;
 }
 
-/* Cards */
-
-.cards-container {
-    width: 300px;
-    margin-top: 1rem;
-    cursor: grab;
-}
-
-.cards-container:active {
-    cursor: grabbing;
-}
-
-/* .card {
-    border: 1px solid #ccc;
-    flex: 1;
-    color: #4e4e4e;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: center;
-} */
-
-.img-card {
-    width: 300px;
-    height: 200px;
-    border: 1px solid #ccc;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* .title-card {
-    margin: 4px;
-}  */
-
-.slick-dots li button {
-    color: #1b61c9 !important;
-}
-
-.slick-prev:before,
-.slick-prev,
-.slick-prev::after,
-.slick-prev:before,
-.slick-next:before,
-.slick-dots,
-.slick-next {
-    display: none !important;
-}
-
 /* Sobre */
 
 .mt-2 {
@@ -289,12 +250,20 @@ a {
         margin: 0;
     }
 
+    .projeto-contet {
+        margin: 0;
+    }
+
     .contato-content-sobre {
         margin: 0px;
     }
 
     .user-content {
         padding: 0px;
+    }
+
+    .img-card {
+        width: 300px !important;
     }
 }
 
@@ -363,4 +332,58 @@ a {
 
 .obrigatorio {
     color: red;
+}
+
+/* Projetos */
+
+.btn-github a:hover {
+    color: #444444;
+}
+
+.btn-github a {
+    color: #1a58b4;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.carroseul {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.img-card {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 2px;
+    border: 1px solid #1a58b4;
+    padding: 4px;
+    opacity: 0.9;
+    transition: 0.5s;
+    margin-bottom: 0.5rem;
+    box-shadow: 1px 2px 3px #002a85;
+    object-fit: cover;
+}
+
+.cards-container {
+    margin-top: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-img {
+    color: #1a58b4;
+}
+
+/* Adicione a cor cinza quando o mouse passar por cima da imagem */
+.img-card:hover {
+    border: 1px solid #1a58b4;
+    padding: 10px;
 }

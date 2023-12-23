@@ -14,17 +14,6 @@
             referrerpolicy="no-referrer"
         />
         <script src="./js/script.js"></script>
-        <!-- Adicione as folhas de estilo do Slick Carousel -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        />
     </head>
     <body>
         <main class="main-content">
@@ -44,11 +33,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="user-content">
-                <div class="page-content-sobre" id="home">
+            <div class="projeto-contet">
+                <div class="projeto-container-content" id="home">
                     <figure>
                         <img
-                            src="./image.png"
+                            src="./fotos/image.png"
                             alt="FotoUser"
                             class="image-content banana"
                         />
@@ -86,62 +75,76 @@
                         </div>
                     </div>
                 </div>
-                <div class="sobre-content">
-                    <h1 class="title-sobre">Sobre</h1>
+                <div class="projeto-content-projeto">
+                    <h1 class="title-sobre">Projetos</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Iure, laborum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Commodi corporis sed itaque soluta tempore
-                        voluptas vitae eos veniam. Pariatur, rerum.
+                        Aqui estão alguns dos meus projetos.<br />
+                        Para ver mais acesse meu
+                        <span class="btn btn-github"
+                            ><a href="https://github.com/LeonardoMarques7">
+                                Github</a
+                            ></span
+                        >.
                     </p>
                     <div class="cards-container">
-                        <div class="card">
-                            <h4>Projeto Blog Fernando Prestes | Fotos</h4>
-                            <br />
-                            <div class="carroseul">
-                                <div>
-                                    <img
-                                        src="img1.png"
-                                        alt=""
-                                        class="img-card"
-                                    />
-                                </div>
-                                <div>
-                                    <img
-                                        src="img2.png"
-                                        alt=""
-                                        class="img-card"
-                                    />
-                                </div>
-                                <div>
-                                    <img
-                                        src="img3.png"
-                                        alt=""
-                                        class="img-card"
-                                    />
-                                </div>
+                        <div class="carroseul">
+                            <div
+                                class="card"
+                                onclick="redirectToRepository('http://blog-fp.wuaze.com/?i=1')"
+                            >
+                                <img
+                                    src="./fotos/img1.png"
+                                    alt=""
+                                    class="img-card"
+                                />
+                                <span>Blog</span>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="./fotos/img2.png"
+                                    alt=""
+                                    class="img-card"
+                                    onclick="redirectToRepository('https://leonardomarques7.github.io/Gerador_QR_Code/')"
+                                />
+                                <span>Gerador de QR Corde</span>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="./fotos/img3.png"
+                                    alt=""
+                                    class="img-card"
+                                    onclick="redirectToRepository('https://leonardomarques7.github.io/Gerador_De_Senha/')"
+                                />
+                                <span>Gerador de Senha</span>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="./fotos/img4.png"
+                                    alt=""
+                                    class="img-card"
+                                    onclick="redirectToRepository('https://leonardomarques7.github.io/Calculadora_IMC/')"
+                                />
+                                <span>Calculadora de IMC</span>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="./fotos/img5.png"
+                                    alt=""
+                                    class="img-card"
+                                    onclick="redirectToRepository('https://leonardomarques7.github.io/Jao-wiki/')"
+                                />
+                                <span>JÃO Wiki</span>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="./fotos/img6.png"
+                                    alt=""
+                                    class="img-card"
+                                    onclick="redirectToRepository('https://leonardomarques7.github.io/Form-WebCarSell/')"
+                                />
+                                <span>Form WebCarSell</span>
                             </div>
                         </div>
-                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-                        <script>
-                            $(document).ready(function () {
-                                $(".carroseul").slick({
-                                    dots: true,
-                                    infinite: true,
-                                    speed: 300,
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                    autoplay: true, // Ativa o autoplay
-                                    autoplaySpeed: 1000, // Define a velocidade do autoplay em milissegundos (exemplo: 2000 = 2 segundos)
-                                    pauseOnHover: true, // Pausa o autoplay quando o mouse está sobre o carrossel
-                                    draggable: false, // Impede o arraste manual das imagens
-                                });
-                            });
-                        </script>
                     </div>
                 </div>
             </div>

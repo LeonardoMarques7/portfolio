@@ -34,3 +34,7 @@ function renderNav() {
 window.addEventListener("DOMContentLoaded", () => {
     renderNav();
 });
+
+function redirectToRepository(repositoryLink) {
+    window.location.href = repositoryLink;
+}
