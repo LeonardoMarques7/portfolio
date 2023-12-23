@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 /* body {
@@ -71,7 +74,9 @@ html {
 }
 
 .nav-link:hover {
-    color: #1f3c79;
+    color: #002a85;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #002a85;
 }
 
 .user-content {
@@ -153,6 +158,20 @@ a {
     margin-left: 250px;
 }
 
+/* Contato */
+
+.contato-content-sobre {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5rem 8vw;
+    margin-left: 250px;
+    width: 100%;
+}
+
+/* Fim do contato */
+
 .redes-container-sobre {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -167,17 +186,18 @@ a {
 }
 
 .page-content-sobre,
-.sobre-content {
+.sobre-content,
+.contato-content {
     max-width: 600px;
     width: 100%;
 }
 
 .sobre-content {
-    text-align: justify;
+    text-align: start;
 }
 
 .sobre-content p {
-    text-align: justify;
+    text-align: start;
 }
 
 /* Cards */
@@ -269,7 +289,78 @@ a {
         margin: 0;
     }
 
+    .contato-content-sobre {
+        margin: 0px;
+    }
+
     .user-content {
         padding: 0px;
     }
+}
+
+/* Contatos */
+
+.form-contato {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.form-label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control,
+.textarea-form {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control:focus,
+.textarea-form:focus {
+    outline: 1px solid #1b61c9;
+}
+
+.textarea-form {
+    max-height: 400px;
+    min-height: 150px;
+    max-width: 300px;
+}
+
+.textarea-form::-webkit-scrollbar-thumb {
+    background-color: #1b61c9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.textarea-form::-webkit-scrollbar {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-contato {
+    border: 1px solid #1b61c9;
+    background-color: #1b61c9;
+    color: #eee;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-contato:hover {
+    background-color: #1a58b4;
+}
+
+/* Obrigatório */
+
+.obrigatorio {
+    color: red;
 }

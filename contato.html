@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portifólio | Leonardo Marques</title>
+        <link rel="shortcut icon" href="./icon.png" type="image/png" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
             rel="stylesheet"
@@ -28,7 +29,7 @@
     <body class="body-content">
         <main class="main-content">
             <div class="nav"></div>
-            <div class="user-content-sobre">
+            <div class="contato-content-sobre">
                 <div class="page-content-sobre" id="home">
                     <figure>
                         <img
@@ -62,35 +63,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="sobre-content mt-2 mb-2">
-                    <h1 class="title-sobre">Sobre</h1>
-                    <p class="text-sobre">
-                        Sou o Leonardo Marques, apaixonado por programação e
-                        desenvolvimento front-end. Tenho seis irmãos e aprendi
-                        desde cedo a valorizar as relações familiares. Estudo na
-                        Etec Fernando Prestes, estou sempre imerso em projetos
-                        no GitHub e busco transformar minha paixão em uma
-                        carreira promissora na área de Ciências da Computação.
-                        Adoro aprender, assistir séries para relaxar e estou
-                        determinado a crescer e evoluir continuamente na minha
-                        jornada tecnológica.
-                    </p>
-                    <p class="text-sobre mt-2">
-                        Minha jornada na programação começou como um fascínio
-                        que rapidamente se transformou em habilidade sólida. Com
-                        foco em desenvolvimento front-end, mergulho fundo em
-                        linguagens como React, JavaScript e PHP. Minha escola, a
-                        Etec Fernando Prestes, é um ambiente inspirador onde
-                        expando meus conhecimentos e conexões na área.
-                    </p>
-                    <p class="text-sobre mt-2">
-                        Além dos códigos no GitHub, busco equilíbrio entre
-                        estudos e momentos de descontração. Apreciar séries é
-                        uma pausa revigorante em meio à intensidade da
-                        programação. Meu objetivo é claro: transformar minha
-                        paixão por tecnologia em uma carreira promissora, sempre
-                        em constante crescimento e aprendizado.
-                    </p>
+                <div class="contato-content mt-2 mb-2">
+                    <h1 class="title-sobre">Contato</h1>
+                    <form class="form-contato">
+                        <label for="nameForm" class="form-label"
+                            >Nome<span class="obrigatorio">*</span></label
+                        >
+                        <input
+                            placeholder="Digite o nome"
+                            name="nameForm"
+                            id="nameForm"
+                            type="text"
+                            class="form-control"
+                            maxlength="100"
+                            required
+                        />
+                        <label for="emailForm" class="form-label">E-mail</label>
+                        <input
+                            placeholder="Digite o email (opcional)"
+                            name="emailForm"
+                            id="emailForm"
+                            type="email"
+                            class="form-control"
+                            maxlength="100"
+                        />
+                        <label for="mensagemForm" class="form-label"
+                            >Mensagem<span class="obrigatorio">*</span>
+                        </label>
+                        <textarea
+                            placeholder="Digite a mensagem"
+                            name="mensagemForm"
+                            id="mensagemForm"
+                            class="textarea-form"
+                            maxlength="1000"
+                            required
+                        ></textarea>
+                        <button class="btn btn-contato">Enviar</button>
+                    </form>
                 </div>
             </div>
         </main>
