@@ -73,13 +73,14 @@
                 </div>
                 <div class="contato-content mt-2 mb-2">
                     <h1 class="title-sobre">Contato</h1>
-                    <form class="form-contato">
+                    <form class="form-contato" action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="aab79bad-b605-4656-a496-ce39c2faefb9">
                         <label for="nameForm" class="form-label"
                             >Nome<span class="obrigatorio">*</span></label
                         >
                         <input
                             placeholder="Digite o nome"
-                            name="nameForm"
+                            name="name"
                             id="nameForm"
                             type="text"
                             class="form-control"
@@ -89,7 +90,7 @@
                         <label for="emailForm" class="form-label">E-mail</label>
                         <input
                             placeholder="Digite o email (opcional)"
-                            name="emailForm"
+                            name="email"
                             id="emailForm"
                             type="email"
                             class="form-control"
@@ -100,17 +101,18 @@
                         </label>
                         <textarea
                             placeholder="Digite a mensagem"
-                            name="mensagemForm"
+                            name="message"
                             id="mensagemForm"
                             class="textarea-form"
                             maxlength="1000"
                             required
                         ></textarea>
+                        <input type="text" name="honeypot" style="display: none;">
                         <div class="input-box">
                             <label for="formCheck" class="label-term"><input type="checkbox" class="check-terms" required/> Aceito os termos de privacidade <strong class="term-privace">Termos de privacidade<strong>.</label>
                         </div>
-                        
-                        <button class="btn btn-contato">Enviar</button>
+                        <input type="hidden" name="redirectTo" value="http://portfolio-leonardomarques.wuaze.com/contato.html">
+                        <button class="btn btn-contato" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>

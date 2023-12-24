@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="mainDiv">
+            <div id="marca">
+                <img class="imagens" src="media/img/titulo.png" alt="Titulo" />
+            </div>
+
+            <div id="anaMaria">
+                <img
+                    class="imagens"
+                    src="media/img/fundoCadastroDois.png"
+                    alt="FundoCadastroDois"
+                />
+            </div>
+            <a
+                href="mailto:leonardoemcs166@email.com?Subject=Aqui%20vai%20o%20assunto&Body=E%20aqui%20o%20corpo"
+                >preparar email</a
+            >
+            <div id="cadastro">
+                <p>....</p>
+                <form
+                    id="contatoForm"
+                    method="get"
+                    action="mailto:teste@mail.com"
+                    target="_blank"
+                >
+                    <input type="hidden" name="Subject" value="Meu assunto" />
+                    <input type="hidden" name="Body" value="" />
+                    <input
+                        class="cells"
+                        type="text"
+                        name="nome"
+                        placeholder="nome"
+                    />
+                    <input
+                        class="cells"
+                        type="text"
+                        name="email"
+                        placeholder="email"
+                    />
+                    <button type="submit" value="click" id="enviar"></button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document
+                .getElementById("contatoForm")
+                .addEventListener("submit", function () {
+                    var nome = this.querySelector("input[name=nome]"),
+                        nome = nome.value;
+                    var email = this.querySelector("input[name=email]"),
+                        email = email.value;
+                    var texto =
+                        "Olá destinatário, \nMeu nome é " +
+                        nome +
+                        " e meu email é " +
+                        email;
+                    this.querySelector("input[name=Body]").setAttribute(
+                        "value",
+                        texto
+                    );
+                });
+        </script>
+    </body>
+</html>
