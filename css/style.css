@@ -406,3 +406,9 @@ a {
     border: 1px solid #1a58b4;
     padding: 10px;
 }
+
+/* Mensagem de agradecimento */
+
+.message {
+    color: #1b61c9;
+}
