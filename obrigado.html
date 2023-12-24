@@ -29,7 +29,7 @@
     <body class="body-content">
         <main class="main-content">
             <div class="nav"></div>
-            <div class="contato-content-sobre">
+            <div class="user-content-sobre">
                 <div class="page-content-sobre" id="home">
                     <figure>
                         <img
@@ -71,53 +71,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="contato-content mt-2 mb-2">
-                    <h1 class="title-sobre">Contato</h1>
-                    <div id="mensagemEnvio" style="display: none;">
-                        <!-- Sua mensagem de envio aqui -->
-                        Obrigado por enviar sua mensagem!
-                    </div>
-                    <form class="form-contato" action="https://api.staticforms.xyz/submit" method="post">
-                        <input type="hidden" name="accessKey" value="aab79bad-b605-4656-a496-ce39c2faefb9">
-                        <label for="nameForm" class="form-label"
-                            >Nome<span class="obrigatorio">*</span></label
-                        >
-                        <input
-                            placeholder="Digite o nome"
-                            name="name"
-                            id="nameForm"
-                            type="text"
-                            class="form-control"
-                            maxlength="100"
-                            required
-                        />
-                        <label for="emailForm" class="form-label">E-mail</label>
-                        <input
-                            placeholder="Digite o email (opcional)"
-                            name="email"
-                            id="emailForm"
-                            type="email"
-                            class="form-control"
-                            maxlength="100"
-                        />
-                        <label for="mensagemForm" class="form-label"
-                            >Mensagem<span class="obrigatorio">*</span>
-                        </label>
-                        <textarea
-                            placeholder="Digite a mensagem"
-                            name="message"
-                            id="mensagemForm"
-                            class="textarea-form"
-                            maxlength="1000"
-                            required
-                        ></textarea>
-                        <input type="text" name="honeypot" style="display: none;">
-                        <div class="input-box">
-                            <label for="formCheck" class="label-term"><input type="checkbox" class="check-terms" required/> Aceito os termos de privacidade <strong class="term-privace">Termos de privacidade<strong>.</label>
-                        </div>
-                        <input type="hidden" name="redirectTo" value="https://leonardomarques7.github.io/portfolio/obrigado.html">
-                        <button class="btn btn-contato" type="submit">Enviar</button>
-                    </form>
+                <div class="sobre-content mt-2 mb-2">
+                    <h1 class="title-sobre">Mensagem Enviada</h1>
+                    <p class="text-sobre">Obrigado pelo contato!</p>
+                    <p class="text-sobre">Logo te responderei :)</p>
                 </div>
             </div>
         </main>
