@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      FTP_USER: ${{ secrets.FTP_USER }}
+      FTP_USER: ${{ vars.FTP_USER }}
       FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
     
     steps:
