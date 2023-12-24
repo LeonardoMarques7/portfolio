@@ -77,7 +77,7 @@
                         <!-- Sua mensagem de envio aqui -->
                         Obrigado por enviar sua mensagem!
                     </div>
-                    <form class="form-contato" action="https://api.staticforms.xyz/submit" method="post" onsubmit="handleFormSubmit(event)">
+                    <form class="form-contato" action="https://api.staticforms.xyz/submit" method="post">
                         <input type="hidden" name="accessKey" value="aab79bad-b605-4656-a496-ce39c2faefb9">
                         <label for="nameForm" class="form-label"
                             >Nome<span class="obrigatorio">*</span></label
@@ -115,38 +115,27 @@
                         <div class="input-box">
                             <label for="formCheck" class="label-term"><input type="checkbox" class="check-terms" required/> Aceito os termos de privacidade <strong class="term-privace">Termos de privacidade<strong>.</label>
                         </div>
-                        <input type="hidden" name="redirectTo" value="https://leonardomarques7.github.io/portfolio/contato.html">
+                        
                         <button class="btn btn-contato" type="submit">Enviar</button>
                     </form>
                 </div>
                 <script>
-                    function handleFormSubmit(event) {
-                    event.preventDefault(); // Impede o envio padrão do formulário
-                    
-                    // Seu código para enviar o formulário aqui (usando AJAX, por exemplo)
-                    // Aqui está um exemplo simples usando fetch:
-                    const form = event.target;
-                    const formData = new FormData(form);
+                    // Supondo que você tenha a variável 'mensagem' com um valor específico
+                    var mensagem = "Olá! Esta é a mensagem que você deseja adicionar.";
 
-                    fetch(form.action, {
-                        method: form.method,
-                        body: formData,
-                    })
-                    .then(response => {
-                        if (response.ok) {
-                            // Exibir a mensagem após o envio bem-sucedido do formulário
-                            document.getElementById('mensagemEnvio').style.display = 'block';
-                            // Pode ser desejável limpar os campos do formulário após o envio
-                            form.reset();
-                        } else {
-                            // Lidar com erros se necessário
-                            console.error('Ocorreu um erro ao enviar o formulário.');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Houve um problema com a solicitação fetch:', error);
-                    });
-                }
+                    // Criando o elemento input
+                    var redirectToInput = document.createElement("input");
+
+                    // Definindo os atributos do elemento input
+                    redirectToInput.setAttribute("type", "hidden");
+                    redirectToInput.setAttribute("name", "redirectTo");
+
+                    // Criando o valor do atributo 'value' usando a variável 'mensagem'
+                    redirectToInput.setAttribute("value", "https://leonardomarques7.github.io/portfolio/contato.html?mensagem=" + encodeURIComponent(mensagem));
+
+                    // Adicionando o elemento input ao documento (por exemplo, ao body)
+                    document.body.appendChild(redirectToInput);
+
                 </script>
             </div>
         </main>
