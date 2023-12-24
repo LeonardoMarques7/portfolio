@@ -115,17 +115,20 @@
                         <div class="input-box">
                             <label for="formCheck" class="label-term"><input type="checkbox" class="check-terms" required/> Aceito os termos de privacidade <strong class="term-privace">Termos de privacidade<strong>.</label>
                         </div>
+                        <input type="hidden" name="redirectTo" value="https://leonardomarques7.github.io/portfolio/contato.html">
                         <button class="btn btn-contato" type="submit">Enviar</button>
                     </form>
                 </div>
                 <script>
                     const btnEnviar = document.querySelector(".btn-contato");
 
-                    btnEnviar.addEventListener("submit", (e) => {
-                        e.preventDefault();
-                    })
-
+                    
                     function showMessage() {
+
+                        btnEnviar.addEventListener("submit", (e) => {
+                            e.preventDefault();
+                        })
+
                         document.getElementById('mensagemEnvio').style.display = 'block';
                     }
                 </script>
