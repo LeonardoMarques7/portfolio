@@ -77,7 +77,7 @@
                         <!-- Sua mensagem de envio aqui -->
                         Obrigado por enviar sua mensagem!
                     </div>
-                    <form class="form-contato" action="https://api.staticforms.xyz/submit" method="post" onsubmit="showMessage()">
+                    <form class="form-contato" action="https://api.staticforms.xyz/submit" method="post" onsubmit="handleFormSubmit(event)">
                         <input type="hidden" name="accessKey" value="aab79bad-b605-4656-a496-ce39c2faefb9">
                         <label for="nameForm" class="form-label"
                             >Nome<span class="obrigatorio">*</span></label
