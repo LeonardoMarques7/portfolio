@@ -412,3 +412,17 @@ a {
 .message {
     color: #1b61c9;
 }
+
+/* List */
+
+.li-item {
+    margin-left: 35px;
+}
+
+.text-term {
+    margin: 20px auto;
+}
+
+.text-term h2 {
+    color: #1b61c9;
+}
