@@ -426,3 +426,36 @@ a {
 .text-term h2 {
     color: #1b61c9;
 }
+
+/* Container linguagens */
+
+.container-ling {
+    margin-top: 5px;
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    color: #1b61c9;
+}
+
+.container-ling .box {
+    border: 1px solid #002a85;
+    border-radius: 5px;
+    width: 50px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    height: 50px;
+}
+
+.container-ling .box:hover {
+    color: #eee;
+    cursor: pointer;
+    background-color: #002a85;
+}
+
+.container-ling a {
+    color: #1b61c9;
+    text-decoration: none;
+}
